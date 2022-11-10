@@ -1,0 +1,77 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "332817ce-dd90-430a-a9d8-d95beb93d253",
+  "Name": "HelpDesk",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.HelpDesk.Client",
+  "ClientBaseAssemblyName": "RRU.HelpDesk.ClientBase",
+  "ClientBaseNamespace": "RRU.HelpDesk.ClientBase",
+  "ClientNamespace": "RRU.HelpDesk.Client",
+  "Code": "HelpDes",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "c6650922-1bc0-4fa8-a601-fb8f3ab48e38",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "831ea8f0-d701-4cbc-b403-3324772a3b70",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "61497f27-a14c-4649-adc6-b5affe57b5b7",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "d5112c30-3bfe-472c-8428-61b86cf26f14",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "f5fae84a-257e-4218-83ad-b32ee0ac73b2"
+    },
+    {
+      "ItemId": "5d9d2565-4555-488d-9389-ef3393985691",
+      "PreviousItemId": "f5fae84a-257e-4218-83ad-b32ee0ac73b2"
+    },
+    {
+      "ItemId": "84a72619-c562-44f3-9571-51ae7c088e49",
+      "PreviousItemId": "5d9d2565-4555-488d-9389-ef3393985691"
+    },
+    {
+      "ItemId": "bde6d3d3-5c0c-408f-b8e4-92aa4acc8737",
+      "PreviousItemId": "84a72619-c562-44f3-9571-51ae7c088e49"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.HelpDesk",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.HelpDesk",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.HelpDesk.Server",
+  "ServerNamespace": "RRU.HelpDesk.Server",
+  "SharedAssemblyName": "RRU.HelpDesk.Shared",
+  "SharedNamespace": "RRU.HelpDesk.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

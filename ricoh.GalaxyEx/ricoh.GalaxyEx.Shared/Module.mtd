@@ -1,0 +1,87 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "4f643e9d-a3b2-4f0b-a313-a5697c2b1c8f",
+  "Name": "GalaxyEx",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "ricoh.GalaxyEx.Client",
+  "ClientBaseAssemblyName": "ricoh.GalaxyEx.ClientBase",
+  "ClientBaseNamespace": "ricoh.GalaxyEx.ClientBase",
+  "ClientNamespace": "ricoh.GalaxyEx.Client",
+  "Code": "GalaxyE",
+  "CompanyCode": "ricoh",
+  "Cover": {
+    "NameGuid": "54815299-3098-4720-801b-7741cf067e99",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "96436643-88fc-4d81-8fa0-98f1c8cafc15",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "1d0e5ebb-c060-4ffb-9621-b185dec6acea",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "27d754b9-7a34-46c7-aee2-8d4d799b21d9",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "bf42c3b8-78c0-4756-8010-4fde72cd0c75"
+    },
+    {
+      "ItemId": "cc2fa8c5-7952-46ef-b225-cf09811d444e",
+      "PreviousItemId": "bf42c3b8-78c0-4756-8010-4fde72cd0c75"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "ricoh.GalaxyEx",
+  "Libraries": [
+    {
+      "NameGuid": "022b4b24-33ea-4387-bef3-4f2bec1c8088",
+      "Name": "NewtonsoftJSON",
+      "Scope": "Server"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "ImportJsonDocument",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Post"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "ricoh.GalaxyEx",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "ricoh.GalaxyEx.Server",
+  "ServerNamespace": "ricoh.GalaxyEx.Server",
+  "SharedAssemblyName": "ricoh.GalaxyEx.Shared",
+  "SharedNamespace": "ricoh.GalaxyEx.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

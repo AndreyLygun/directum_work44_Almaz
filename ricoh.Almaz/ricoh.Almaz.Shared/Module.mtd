@@ -1,0 +1,70 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "27d754b9-7a34-46c7-aee2-8d4d799b21d9",
+  "Name": "Almaz",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "ricoh.Almaz.Client",
+  "ClientBaseAssemblyName": "ricoh.Almaz.ClientBase",
+  "ClientBaseNamespace": "ricoh.Almaz.ClientBase",
+  "ClientNamespace": "ricoh.Almaz.Client",
+  "Code": "Almaz",
+  "CompanyCode": "ricoh",
+  "Cover": {
+    "NameGuid": "46344a2c-d939-400b-8f03-dadb32342a30",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "90294075-b6f5-47ac-b9dc-8aeaebe114cc",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "f07bfbc1-36fa-4238-b5a9-f8969626cf13",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.4.32.0"
+    }
+  ],
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "128fd8a7-9835-41a7-9f23-223c701c16b1"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "ricoh.Almaz",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "ricoh.Almaz",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "ricoh.Almaz.Server",
+  "ServerNamespace": "ricoh.Almaz.Server",
+  "SharedAssemblyName": "ricoh.Almaz.Shared",
+  "SharedNamespace": "ricoh.Almaz.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "d5112c30-3bfe-472c-8428-61b86cf26f14",
+  "Name": "Education",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.Education.Client",
+  "ClientBaseAssemblyName": "RRU.Education.ClientBase",
+  "ClientBaseNamespace": "RRU.Education.ClientBase",
+  "ClientNamespace": "RRU.Education.Client",
+  "Code": "Educati",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "408a0a32-1e1d-4f67-beea-c4d7ab3462e0",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "af9bf917-af82-4db8-a19d-ec8ad5eb8820",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "586ead35-0572-406a-9fe3-8bdb8ff560e3",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.Education",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.Education",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.Education.Server",
+  "ServerNamespace": "RRU.Education.Server",
+  "SharedAssemblyName": "RRU.Education.Shared",
+  "SharedNamespace": "RRU.Education.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

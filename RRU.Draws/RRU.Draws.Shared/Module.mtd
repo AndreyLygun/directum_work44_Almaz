@@ -1,0 +1,131 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "aca19679-2655-45e8-a6eb-fecd7ddaefad",
+  "Name": "Draws",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.Draws.Client",
+  "ClientBaseAssemblyName": "RRU.Draws.ClientBase",
+  "ClientBaseNamespace": "RRU.Draws.ClientBase",
+  "ClientNamespace": "RRU.Draws.Client",
+  "Code": "Draws",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "04b49b67-5d4a-4958-b914-eb9afe5921f2",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "1ba227d7-f1e8-44d2-b418-a472ef2d04d7",
+        "Name": "DrawList",
+        "EntityTypeId": "45a510af-2f4d-4129-9448-1a8af57ccdb2",
+        "GroupId": "e85c94a6-adc1-4329-b6ae-0987a9316e50",
+        "PreviousItemGuid": "5a851c4e-9cb2-4d60-b54e-5514d2e9a473"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "5a851c4e-9cb2-4d60-b54e-5514d2e9a473",
+        "Name": "AddDraw",
+        "FunctionName": "AddDraw",
+        "GroupId": "e85c94a6-adc1-4329-b6ae-0987a9316e50"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "b50be98b-d5a4-4fae-9f78-dc19fd0ad632",
+        "Name": "Stage",
+        "EntityTypeId": "8fcbaac0-7efd-4c09-adfd-83113d35b909",
+        "GroupId": "e85c94a6-adc1-4329-b6ae-0987a9316e50",
+        "PreviousItemGuid": "1ba227d7-f1e8-44d2-b418-a472ef2d04d7"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "b8277a89-8dce-4363-823f-5c78fe93c027",
+        "Name": "RequestScan",
+        "FunctionName": "RequestScan",
+        "GroupId": "1c1a301d-683f-46d2-9a82-ca52677e5a9f"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "cddc36f2-2519-4fd0-883e-87e1b73686a2",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "e85c94a6-adc1-4329-b6ae-0987a9316e50",
+        "Name": "Draws",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDraws_e85c94a6adc14329b6ae0987a9316e50.png",
+        "TabId": "ad030f00-cc06-4e81-a076-570bc91262a8"
+      },
+      {
+        "NameGuid": "1c1a301d-683f-46d2-9a82-ca52677e5a9f",
+        "Name": "Requests",
+        "BackgroundPosition": "Stretch",
+        "PreviousItemGuid": "e85c94a6-adc1-4329-b6ae-0987a9316e50",
+        "TabId": "ad030f00-cc06-4e81-a076-570bc91262a8"
+      }
+    ],
+    "Header": {
+      "NameGuid": "5572a60f-9716-4e90-a0e6-b21d52829e48",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": [
+      {
+        "NameGuid": "ad030f00-cc06-4e81-a076-570bc91262a8",
+        "Name": "Draws"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "541782cb-8b51-41d6-a805-a94e7f81faae",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "45a510af-2f4d-4129-9448-1a8af57ccdb2"
+    },
+    {
+      "ItemId": "8fcbaac0-7efd-4c09-adfd-83113d35b909",
+      "PreviousItemId": "45a510af-2f4d-4129-9448-1a8af57ccdb2"
+    },
+    {
+      "ItemId": "21875fd0-2890-4f97-b3b6-2016b1e12fdf",
+      "PreviousItemId": "8fcbaac0-7efd-4c09-adfd-83113d35b909"
+    },
+    {
+      "ItemId": "4fb771c5-e502-43be-b616-833143fb1e33",
+      "PreviousItemId": "21875fd0-2890-4f97-b3b6-2016b1e12fdf"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.Draws",
+  "Overridden": [
+    "IsLicensed"
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.Draws",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.Draws.Server",
+  "ServerNamespace": "RRU.Draws.Server",
+  "SharedAssemblyName": "RRU.Draws.Shared",
+  "SharedNamespace": "RRU.Draws.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
