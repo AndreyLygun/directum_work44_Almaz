@@ -1,9 +1,9 @@
 {
   "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Content.Shared",
-  "NameGuid": "21875fd0-2890-4f97-b3b6-2016b1e12fdf",
-  "Name": "Document",
+  "NameGuid": "6dada6b4-6054-4e11-b851-88551c1d8c0a",
+  "Name": "OfficialDocument",
   "AccessRightsMode": "Both",
-  "BaseGuid": "6dada6b4-6054-4e11-b851-88551c1d8c0a",
+  "BaseGuid": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {
     "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
@@ -21,6 +21,8 @@
     "Versions": []
   },
   "IconResourcesKeys": [],
+  "IsAbstract": true,
+  "LayeredFromGuid": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
   "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
   "Properties": [
@@ -28,7 +30,7 @@
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
       "Name": "Versions",
-      "EntityGuid": "3f019a67-ce92-4c9c-8241-6c526bceb770",
+      "EntityGuid": "0fca6ed6-af0d-42d0-9121-acabd058733a",
       "IsAncestorMetadata": true,
       "Overridden": [
         "EntityGuid"
@@ -39,18 +41,28 @@
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "15280407-331e-42f6-b263-041a495b66cd",
       "Name": "Tracking",
-      "EntityGuid": "631e5d83-8820-47bc-88fa-62f4a91948e8",
+      "EntityGuid": "77388a1a-9f6a-41bf-aa4e-fe3b543001a6",
       "IsAncestorMetadata": true,
       "Overridden": [
         "EntityGuid"
       ],
       "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "49051629-f1f0-4fd6-8e5f-dacfee3dc75c",
+      "Name": "GalaxyIDRRU",
+      "Code": "GalaxyIDRRU",
+      "IsEnabled": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "b1d0bcf5-1d6c-49a2-8680-2bd52ab58115"
     }
   ],
   "PublicStructures": [],
   "ResourcesKeys": [],
   "RibbonCardMetadata": {
-    "NameGuid": "33055581-d203-4cb8-aa59-a5682a77a5bb",
+    "NameGuid": "43a4fd86-d3b2-4de9-b503-0f030ae620a9",
     "Name": "RibbonCard",
     "Categories": [],
     "Elements": [],
@@ -60,7 +72,7 @@
     "RibbonKind": "Card"
   },
   "RibbonCollectionMetadata": {
-    "NameGuid": "f36ef481-2397-4be3-917c-f83941b5b84b",
+    "NameGuid": "d992420f-b6c2-446b-a183-eac5e65f57b0",
     "Name": "RibbonCollection",
     "Categories": [],
     "Elements": [],

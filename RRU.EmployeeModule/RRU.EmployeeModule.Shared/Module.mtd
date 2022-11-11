@@ -1,0 +1,97 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "0a814385-50b5-4537-b428-52b099541082",
+  "Name": "EmployeeModule",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.EmployeeModule.Client",
+  "ClientBaseAssemblyName": "RRU.EmployeeModule.ClientBase",
+  "ClientBaseNamespace": "RRU.EmployeeModule.ClientBase",
+  "ClientNamespace": "RRU.EmployeeModule.Client",
+  "Code": "Employe",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "921c6898-e627-4c8f-9295-8099eee0bb2f",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "6117d28e-2e87-44cf-af27-3fccf5aad99d",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "730a8a0f-192a-4417-ab8b-a0be9a24e844",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "fc1024e8-0851-4d86-b26b-7fa5829b6ea1",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "e39e82a4-6765-4fac-9f9b-3920dce088f1"
+    },
+    {
+      "ItemId": "39bea3ac-1a70-4ec2-86d7-ff97ed075b01",
+      "PreviousItemId": "e39e82a4-6765-4fac-9f9b-3920dce088f1"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.EmployeeModule",
+  "PublicFunctions": [
+    {
+      "Name": "ImportEmployeeOrderV1",
+      "Parameters": [
+        {
+          "Name": "jsonName",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Get"
+    },
+    {
+      "Name": "ImportEmployeeOrderV2",
+      "Parameters": [
+        {
+          "Name": "jsonName",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Get"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.EmployeeModule",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.EmployeeModule.Server",
+  "ServerNamespace": "RRU.EmployeeModule.Server",
+  "SharedAssemblyName": "RRU.EmployeeModule.Shared",
+  "SharedNamespace": "RRU.EmployeeModule.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

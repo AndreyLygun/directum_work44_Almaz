@@ -1,0 +1,67 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "fc1024e8-0851-4d86-b26b-7fa5829b6ea1",
+  "Name": "Almaz",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.Almaz.Client",
+  "ClientBaseAssemblyName": "RRU.Almaz.ClientBase",
+  "ClientBaseNamespace": "RRU.Almaz.ClientBase",
+  "ClientNamespace": "RRU.Almaz.Client",
+  "Code": "Almaz",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "a581e3b3-ed75-4e6a-beeb-5fd8460d9192",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "e0b02903-0c48-4df1-9aa0-2bbc16c11675",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "ffb22ef8-d1d8-41cc-9f4b-ded12ecc4ddd",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "6dada6b4-6054-4e11-b851-88551c1d8c0a"
+    },
+    {
+      "ItemId": "224003f5-6438-4431-9dd1-e7c92d69898e",
+      "PreviousItemId": "6dada6b4-6054-4e11-b851-88551c1d8c0a"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.Almaz",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.Almaz",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.Almaz.Server",
+  "ServerNamespace": "RRU.Almaz.Server",
+  "SharedAssemblyName": "RRU.Almaz.Shared",
+  "SharedNamespace": "RRU.Almaz.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
