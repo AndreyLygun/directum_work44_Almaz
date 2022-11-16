@@ -403,6 +403,7 @@
       "NameGuid": "01b555dc-5f62-411c-8b4b-41883cdff3b9",
       "Name": "GalaxyKindRRU",
       "Code": "GalaxyKindRRU",
+      "IsEnabled": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "7eca1266-9b95-447b-9886-77d1f63d8228"
     }
