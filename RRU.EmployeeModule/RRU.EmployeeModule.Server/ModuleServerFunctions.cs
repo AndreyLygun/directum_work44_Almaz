@@ -18,11 +18,7 @@ namespace RRU.EmployeeModule.Server
     }
     [Public(WebApiRequestType = RequestType.Get)]
     public string ImportEmployeeOrderV2(int jsonName) {
-      var r = new Result();
-      r.status = 0;
-      r.result = "Всё получилось";
-      r.url = "www.yandex.ru";
-      return r;
+      return "Всё получилось";
     }
     
   }

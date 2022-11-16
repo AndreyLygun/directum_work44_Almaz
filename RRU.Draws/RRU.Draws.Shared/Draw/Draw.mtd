@@ -73,12 +73,13 @@
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "dac5a094-b07f-407e-a80d-71198fff1704",
           "Name": "ControlGroup1",
+          "CanChangeSubGroupsWidth": true,
           "ColumnDefinitions": [
             {
-              "Percentage": 33.33
+              "Percentage": 57.41
             },
             {
-              "Percentage": 66.66
+              "Percentage": 41.68
             }
           ]
         },
@@ -88,10 +89,10 @@
           "Name": "Meta",
           "ColumnDefinitions": [
             {
-              "Percentage": 50.0
+              "Percentage": 53.89
             },
             {
-              "Percentage": 50.0
+              "Percentage": 44.53
             }
           ],
           "ColumnNumber": 0,
