@@ -70,4 +70,7 @@
   <data name="AdditionalInfoTemplate" xml:space="preserve">
     <value />
   </data>
+  <data name="Property_Employees" xml:space="preserve">
+    <value>Сотрудники</value>
+  </data>
 </root>

@@ -58,19 +58,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Employee Order</value>
+  <data name="Property_EmployeeID" xml:space="preserve">
+    <value>Табельный номер</value>
   </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Employee Order</value>
+  <data name="Property_Name" xml:space="preserve">
+    <value>ФИО сотрудника</value>
   </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Employee Orders</value>
-  </data>
-  <data name="AdditionalInfoTemplate" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Property_Employees" xml:space="preserve">
-    <value>Employees</value>
+  <data name="Property_Employee" xml:space="preserve">
+    <value>Сотрудник</value>
   </data>
 </root>

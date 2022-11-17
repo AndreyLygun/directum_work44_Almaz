@@ -76,10 +76,10 @@
           "CanChangeSubGroupsWidth": true,
           "ColumnDefinitions": [
             {
-              "Percentage": 57.41
+              "Percentage": 57.94
             },
             {
-              "Percentage": 41.68
+              "Percentage": 42.06
             }
           ]
         },
@@ -89,10 +89,10 @@
           "Name": "Meta",
           "ColumnDefinitions": [
             {
-              "Percentage": 53.89
+              "Percentage": 54.76
             },
             {
-              "Percentage": 44.53
+              "Percentage": 45.24
             }
           ],
           "ColumnNumber": 0,

@@ -44,27 +44,21 @@
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.EmployeeModule",
+  "Libraries": [
+    {
+      "NameGuid": "cd028899-87f9-4eaf-a604-3f96967aa2e2",
+      "Name": "NewtonsoftwareJSON",
+      "Scope": "Both"
+    }
+  ],
   "PublicFunctions": [
     {
       "Name": "ImportEmployeeOrderV1",
       "Parameters": [
         {
-          "Name": "jsonName",
+          "Name": "jsonFileName",
           "ParameterType": "global::System.String",
           "ParameterTypeFullName": "System.String"
-        }
-      ],
-      "ReturnType": "global::System.String",
-      "ReturnTypeFullName": "System.String",
-      "WebApiRequestType": "Get"
-    },
-    {
-      "Name": "ImportEmployeeOrderV2",
-      "Parameters": [
-        {
-          "Name": "jsonName",
-          "ParameterType": "global::System.Int32",
-          "ParameterTypeFullName": "System.Int32"
         }
       ],
       "ReturnType": "global::System.String",
