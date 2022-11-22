@@ -3,8 +3,19 @@
   "NameGuid": "e39e82a4-6765-4fac-9f9b-3920dce088f1",
   "Name": "EmployeeOrder",
   "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "52425ea6-2c89-4dd0-822b-0dc9d4e31fec",
+      "Name": "ApprovalFormWoDate",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_ApprovalFormWoDate_large_52425ea62c894dd0822b0dc9d4e31fec.png",
+      "SmallIconName": "Action_ApprovalFormWoDate_small_52425ea62c894dd0822b0dc9d4e31fec.png"
+    }
+  ],
   "BaseGuid": "8a57d8c1-a05a-405e-95e7-913565b3e29d",
   "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
   "CreationAreaMetadata": {
     "NameGuid": "b8fd5226-aa10-4e8c-b3f7-d8507d6c87cb",
     "Name": "CreationArea",
@@ -66,8 +77,13 @@
     "CreatedServer"
   ],
   "IconResourcesKeys": [],
+  "IsSelectableAsFolderContent": true,
   "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
+  "Overridden": [
+    "IsVisible",
+    "CanBeSearch"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
@@ -133,7 +149,17 @@
     "NameGuid": "bbaf6ab5-e4de-422f-9782-4aa401a92493",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "32e86939-d9bd-4234-954c-33267f8d34a6",
+        "Name": "ApprovalFormWoDate",
+        "ActionGuid": "52425ea6-2c89-4dd0-822b-0dc9d4e31fec",
+        "ButtonSize": "Large",
+        "Index": 1,
+        "ParentGuid": "33726bc1-71f1-472e-9a61-4a4077a73ee9"
+      }
+    ],
     "Groups": [],
     "IsAncestorMetadata": true,
     "Pages": [],

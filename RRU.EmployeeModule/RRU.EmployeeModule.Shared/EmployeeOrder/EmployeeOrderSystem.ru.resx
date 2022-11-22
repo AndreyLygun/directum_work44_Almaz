@@ -73,4 +73,13 @@
   <data name="Property_Employees" xml:space="preserve">
     <value>Сотрудники</value>
   </data>
+  <data name="Action_ApprovalFormWoDate" xml:space="preserve">
+    <value>Лист согласования (без дат)</value>
+  </data>
+  <data name="Action_ApprovalFormWoDateHint" xml:space="preserve">
+    <value>Отчёт о согласовании документа</value>
+  </data>
+  <data name="Action_ApprovalFormWoDateDescription" xml:space="preserve">
+    <value>Выводит отчёт о согласовании документа без указания даты согласования</value>
+  </data>
 </root>
