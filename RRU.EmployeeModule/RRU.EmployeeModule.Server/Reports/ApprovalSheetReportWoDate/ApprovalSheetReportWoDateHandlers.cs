@@ -1,9 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sungero.Company;
 using Sungero.Core;
 using Sungero.CoreEntities;
+using Sungero.Docflow;
 
 namespace RRU.EmployeeModule
 {
@@ -11,57 +12,57 @@ namespace RRU.EmployeeModule
   {
     public override void AfterExecute(Sungero.Reporting.Server.AfterExecuteEventArgs e)
     {
-      Docflow.PublicFunctions.Module.DeleteReportData(Constants.ApprovalSheetReport.SourceTableName, ApprovalSheetReport.ReportSessionId);
+      Sungero.Docflow.PublicFunctions.Module.DeleteReportData(Constants.ApprovalSheetReportWoDate.SourceTableName, ApprovalSheetReportWoDate.ReportSessionId);
     }
 
     public override void BeforeExecute(Sungero.Reporting.Server.BeforeExecuteEventArgs e)
     {
-      ApprovalSheetReport.ReportSessionId = Guid.NewGuid().ToString();
-      Functions.ApprovalTask.UpdateApprovalSheetReportTable(ApprovalSheetReport.Document, ApprovalSheetReport.ReportSessionId);
-      ApprovalSheetReport.HasRespEmployee = false;
+      ApprovalSheetReportWoDate.ReportSessionId = Guid.NewGuid().ToString();
+      Sungero.Docflow.Server.ApprovalTaskFunctions.UpdateApprovalSheetReportTable(ApprovalSheetReportWoDate.Document, ApprovalSheetReportWoDate.ReportSessionId);
+      //=Functions.ApprovalTask.UpdateApprovalSheetReportTable(ApprovalSheetReportWoDate.Document, ApprovalSheetReportWoDate.ReportSessionId);
+      ApprovalSheetReportWoDate.HasRespEmployee = false;
       
-      var document = ApprovalSheetReport.Document;
+      var document = ApprovalSheetReportWoDate.Document;
       if (document == null)
         return;
       
       // Наименование отчета.
-      ApprovalSheetReport.DocumentName = Docflow.PublicFunctions.Module.FormatDocumentNameForReport(document, false);
+      ApprovalSheetReportWoDate.DocumentName = Sungero.Docflow.PublicFunctions.Module.FormatDocumentNameForReport(document, false);
       
       // НОР.
       var ourOrg = document.BusinessUnit;
       if (ourOrg != null)
-        ApprovalSheetReport.OurOrgName = ourOrg.Name;
+        ApprovalSheetReportWoDate.OurOrgName = ourOrg.Name;
       
       // Дата отчета.
-      ApprovalSheetReport.CurrentDate = Calendar.Now;
+      ApprovalSheetReportWoDate.CurrentDate = Calendar.Now;
       
       // Ответственный.
-      var responsibleEmployee = Functions.OfficialDocument.GetDocumentResponsibleEmployee(document);
+      var responsibleEmployee =  Employees.As(document.Author); //Sungero.Docflow.Shared.OfficialDocumentFunctions.GetDocumentResponsibleEmployee(document);
       
       if (responsibleEmployee != null &&
           responsibleEmployee.IsSystem != true)
       {
-        var respEmployee = string.Format("{0}: {1}",
-                                         Reports.Resources.ApprovalSheetReport.ResponsibleEmployee,
+        var respEmployee = string.Format("{0}: {1}", Reports.Resources.ApprovalSheetReportWoDate.ResponsibleEmployee,
                                          responsibleEmployee.Person.ShortName);
         
         if (responsibleEmployee.JobTitle != null)
           respEmployee = string.Format("{0} ({1})", respEmployee, responsibleEmployee.JobTitle.DisplayValue.Trim());
         
-        ApprovalSheetReport.RespEmployee = respEmployee;
+        ApprovalSheetReportWoDate.RespEmployee = respEmployee;
         
-        ApprovalSheetReport.HasRespEmployee = true;
+        ApprovalSheetReportWoDate.HasRespEmployee = true;
       }
       
       // Распечатал.
       if (Employees.Current == null)
       {
-        ApprovalSheetReport.Clerk = Users.Current.Name;
+        ApprovalSheetReportWoDate.Clerk = Users.Current.Name;
       }
       else
       {
         var clerkPerson = Employees.Current.Person;
-        ApprovalSheetReport.Clerk = clerkPerson.ShortName;
+        ApprovalSheetReportWoDate.Clerk = clerkPerson.ShortName;
       }
     }
   }

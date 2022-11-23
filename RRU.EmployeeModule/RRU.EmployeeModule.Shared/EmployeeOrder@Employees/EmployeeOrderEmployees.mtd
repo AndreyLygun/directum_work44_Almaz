@@ -41,10 +41,8 @@
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
       "NameGuid": "b1abb039-e255-4e84-9507-579c180d9bb7",
       "Name": "Employee",
-      "CanBeSearch": false,
       "Code": "Employee",
       "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
-      "IsShowedInList": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "fb842a86-d1d6-4995-9de0-d9c17cb288c1"
     }

@@ -53,15 +53,15 @@
           "Name": "Employees",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultiLikeEditorToCollectionBinder",
           "ParentGuid": "2cf357f4-9e0d-4e83-8920-a09720cad45d",
           "PropertyGuid": "fa7ea982-553a-42fe-b1b4-85137cf913d2",
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": [
             {
-              "Name": "Height",
-              "Value": 120
+              "Name": "NavigationPropertyGuid",
+              "Value": "b1abb039-e255-4e84-9507-579c180d9bb7"
             }
           ]
         }

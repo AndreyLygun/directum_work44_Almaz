@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
@@ -11,7 +11,7 @@ namespace RRU.EmployeeModule.Client
   {
     public virtual void ApprovalFormWoDate(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      Dialogs.NotifyMessage("Здесь будет отчёт о согласовании");
+      Functions.Module.RunApprovalSheetReportWoDates(_obj);
     }
 
     public virtual bool CanApprovalFormWoDate(Sungero.Domain.Client.CanExecuteActionArgs e)

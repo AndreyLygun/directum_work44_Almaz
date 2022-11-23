@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 
 namespace RRU.EmployeeModule.Server
 {
+
+  
   
   struct Document
   {
@@ -18,7 +20,6 @@ namespace RRU.EmployeeModule.Server
     public string Description { get; set; }
     public string FileName { get; set; }
     public string DocNum { get; set; }
-    public string DepartmentID { get; set; }
     public string ResponsibleID { get; set; }
     public string ResponsibleFIO { get; set; }
     public Employee[] Employees { get; set; }
@@ -29,6 +30,7 @@ namespace RRU.EmployeeModule.Server
   {
     public string ID { get; set; }
     public string FIO { get; set; }
+    public string DepartmentID { get; set; }
   }
 
   struct Attachment
@@ -47,8 +49,13 @@ namespace RRU.EmployeeModule.Server
   
   public class ModuleFunctions
   {
-    
-    
+    /// <summary>
+    /// Функция интеграции для импорта приказа по персоналу:
+    /// считывает из указанного JSON файла свойства приказа по персоналу
+    /// и создаёт его вместе с приложениями к приказу
+    /// </summary>
+    /// <param name="jsonFileName">сетевое имя JSON-файла</param>
+    /// <returns></returns>
     [Public(WebApiRequestType = RequestType.Get)]
     public string ImportEmployeeOrderV1(string jsonFileName) {
       Response response = new Response() {Status = 1, Message = "", URL = ""};
@@ -65,7 +72,7 @@ namespace RRU.EmployeeModule.Server
           throw ex;
         }
         
-        docObject = Newtonsoft.Json.JsonConvert.DeserializeObject<Document>(json);        
+        docObject = Newtonsoft.Json.JsonConvert.DeserializeObject<Document>(json);
 
         // Получаем из полученной структуры объекты Directum
         var kind = RRU.Almaz.DocumentKinds.GetAll(d => d.GalaxyKindRRU==docObject.DocKind).FirstOrDefault();
@@ -73,14 +80,7 @@ namespace RRU.EmployeeModule.Server
 
         var date = new DateTime();
         date = DateTime.ParseExact(docObject.DocDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
-//        Calendar.TryParseDate(docObject.DocDate, out date);
-
-        var department = Sungero.Company.Departments.GetAll(d => d.Code==docObject.DepartmentID).FirstOrDefault();
-        if (department==null) {
-          response.Message = $"Не удалось найти отдел с кодом {docObject.DepartmentID}";
-          Logger.Error("Ошибка в в функции 'ImportEmployeeOrderV1': " + response.Message);
-          return Newtonsoft.Json.JsonConvert.SerializeObject(response);
-        }
+        //        Calendar.TryParseDate(docObject.DocDate, out date);
 
         var responsible = Sungero.Company.Employees.GetAll(e => e.PersonnelNumber == docObject.ResponsibleID).FirstOrDefault();
         if (responsible==null) {
@@ -97,11 +97,12 @@ namespace RRU.EmployeeModule.Server
         }
 
         IEmployeeOrder doc = null;
-        string path = ""; 
+        string path = "";
         try {
           path = System.IO.Path.GetDirectoryName(jsonFileName);
-          string fileName = path+"/" + docObject.FileName;          
+          string fileName = path+"/" + docObject.FileName;
           doc = EmployeeOrders.CreateFrom(fileName);
+          doc.Department = Sungero.Company.Departments.Null;
         } catch {
           response.Message = $"В Directum не создано ни одной организации.";
         }
@@ -112,17 +113,42 @@ namespace RRU.EmployeeModule.Server
         doc.Subject = docObject.Description;
         doc.RegistrationNumber = docObject.DocNum;
         doc.BusinessUnit = org;
-        doc.Department = department;
         doc.Author = responsible;
         doc.PreparedBy = responsible;
         doc.DocumentDate = date;
         doc.RegistrationDate = date;
         
         // Заполняем таблицу с сотрудниками
-        foreach(Employee emp in docObject.Employees){
-          var employee = doc.Employees.AddNew();
-          employee.Name = emp.FIO;
-          employee.EmployeeID = emp.ID;
+        foreach(Employee row in docObject.Employees){
+          var employee = Sungero.Company.Employees.GetAll(e => e.PersonnelNumber.Equals(row.ID)).FirstOrDefault();
+          if (employee == null) {
+            // Создаём Person с указанными ФИО
+            var person = Sungero.Parties.People.Create();            
+            string[] names = row.FIO.Split(' ');
+            person.LastName = names[0];
+            person.FirstName = names[1];
+            person.MiddleName = names[2];
+            person.Save();
+            // Создаём сотрудника
+            employee = Sungero.Company.Employees.Create();
+            employee.NeedNotifyAssignmentsSummary = false;
+            employee.NeedNotifyExpiredAssignments = false;
+            employee.NeedNotifyNewAssignments = false;              
+            employee.Person = person;
+            employee.PersonnelNumber = row.ID;
+            var department = Sungero.Company.Departments.GetAll(d => d.Code==row.DepartmentID).FirstOrDefault();
+            if (department==null) {
+              response.Message = $"Не удалось найти отдел с кодом {row.DepartmentID} ({row.FIO}) ";
+              Logger.Error("Ошибка в в функции 'ImportEmployeeOrderV1': " + response.Message);
+              return Newtonsoft.Json.JsonConvert.SerializeObject(response);
+            }
+            employee.Department = department;
+          }
+          doc.Employees.AddNew().Employee = employee;
+          // Заполняем поле "Отдел" документа сведениями по первому сотруднику в списке сотрудников, чтобы приказ мог попасть на согласование начальнику отдела
+          // Если в приказе есть сотрудники нескольких отделов, согласующему нужно вручную добавить в согласование дополнительного согласующего 
+          if (doc.Department.Equals(Sungero.Company.Departments.Null)) 
+            doc.Department = employee.Department;
         }
         doc.Save();
         
@@ -144,7 +170,7 @@ namespace RRU.EmployeeModule.Server
         response.Message = ex.Message;
         Logger.Error(ex.Message, ex);
       }
-      return Newtonsoft.Json.JsonConvert.SerializeObject(response);      
+      return Newtonsoft.Json.JsonConvert.SerializeObject(response);
     }
   }
 }
