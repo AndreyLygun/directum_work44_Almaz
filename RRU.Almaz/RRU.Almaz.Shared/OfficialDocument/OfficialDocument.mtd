@@ -27,6 +27,19 @@
   "OperationsClass": "",
   "Properties": [
     {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "263cf068-e224-4a83-9df0-198e828101d1",
+      "Name": "RegistrationNumber",
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ],
+      "Versions": []
+    },
+    {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
       "Name": "Versions",
@@ -53,7 +66,6 @@
       "NameGuid": "49051629-f1f0-4fd6-8e5f-dacfee3dc75c",
       "Name": "GalaxyIDRRU",
       "Code": "GalaxyIDRRU",
-      "IsEnabled": false,
       "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "b1d0bcf5-1d6c-49a2-8680-2bd52ab58115"

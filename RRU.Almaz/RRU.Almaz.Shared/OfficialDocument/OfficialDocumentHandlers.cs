@@ -7,8 +7,5 @@ using RRU.Almaz.OfficialDocument;
 
 namespace RRU.Almaz
 {
-  partial class OfficialDocumentSharedHandlers
-  {
 
-  }
 }

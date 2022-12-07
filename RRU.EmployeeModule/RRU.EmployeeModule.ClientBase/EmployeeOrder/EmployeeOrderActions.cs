@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
@@ -7,6 +7,7 @@ using RRU.EmployeeModule.EmployeeOrder;
 
 namespace RRU.EmployeeModule.Client
 {
+
   partial class EmployeeOrderActions
   {
     public virtual void ApprovalFormWoDate(Sungero.Domain.Client.ExecuteActionArgs e)
