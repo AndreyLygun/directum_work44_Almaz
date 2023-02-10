@@ -28,6 +28,9 @@ namespace RRU.EmployeeModule.Server
     public void CreateDocumentKinds() {
 
       var kinds = new string[][] {
+        new string[] {"1", "Приём на работу"},
+        new string[] {"2", "Изменение ФИО"},
+        new string[] {"3", "Временное замещение без освобождения от своих обязанностей"},
         new string[] {"4", "Внутреннее совместительство, совмещение"},
         new string[] {"5", "Перемещение"},
         new string[] {"6", "Оформление очередного отпуска"},
