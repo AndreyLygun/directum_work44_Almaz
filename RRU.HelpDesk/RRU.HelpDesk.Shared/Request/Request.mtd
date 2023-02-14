@@ -11,6 +11,40 @@
     "Buttons": [],
     "IsAncestorMetadata": true
   },
+  "EntityStyleSelectors": [
+    {
+      "NameGuid": "d0f93b1a-821a-439b-88cd-0580d590aaae",
+      "Name": "Closed",
+      "Conditions": [
+        {
+          "NameGuid": "c29e7eec-a9dc-4af4-a2aa-6b59a98c46e1",
+          "LeftSideGuid": "f025792f-1f77-4750-a7f9-d74c0deadb16",
+          "RightSide": "Closed"
+        }
+      ],
+      "Style": {
+        "NameGuid": "8ebd7ab9-bad5-4635-9667-488202c03857",
+        "ForegroundBrushName": "MagentaEntityColor",
+        "IsStrikethrough": true
+      }
+    },
+    {
+      "NameGuid": "45517e98-bbed-4fe9-93dc-58bb15ba2ba9",
+      "Name": "Today",
+      "Conditions": [
+        {
+          "NameGuid": "7b23b8a9-ca43-454d-8f42-c54b33b16e5d",
+          "LeftSideGuid": "5619d6ae-568f-41fd-b2d3-b0cc149e9822",
+          "RightSide": "Today"
+        }
+      ],
+      "PreviousStyleSelectorGuid": "d0f93b1a-821a-439b-88cd-0580d590aaae",
+      "Style": {
+        "NameGuid": "b834d2cb-e729-450f-b790-342b6f8e9f0e",
+        "ForegroundBrushName": "MagentaEntityColor"
+      }
+    }
+  ],
   "ExtraSearchProperties": [],
   "FilterPanel": {
     "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
@@ -222,7 +256,50 @@
           "RowSpan": 1
         }
       ]
+    },
+    {
+      "$type": "Sungero.Metadata.InplaceFormMetadata, Sungero.Metadata",
+      "NameGuid": "d1d0461f-da49-488e-bd7e-d3557ca0e40e",
+      "Name": "Jobs",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "ef7e7be2-96df-45a6-88da-864185b0ceff",
+          "Name": "ControlGroup"
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "79dbdaa7-5039-41d1-b558-c5982f7ae68e",
+          "Name": "Jobs",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
+          "HeaderLocation": "None",
+          "ParentGuid": "ef7e7be2-96df-45a6-88da-864185b0ceff",
+          "PropertyGuid": "0e7098d2-d9c9-478f-ab23-037f24337f36",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "0ea0aadd-0410-4ed2-a9bd-0bbfdf5003cc",
+          "Name": "TotalHours",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "ef7e7be2-96df-45a6-88da-864185b0ceff",
+          "PropertyGuid": "acb0d81c-f74b-443e-a93b-184c927ca18a",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "ParentFormGuid": "037f032a-eb29-462d-9c59-ae51356937c1"
     }
+  ],
+  "HandledEvents": [
+    "CreatedServer"
   ],
   "IconResourcesKeys": [],
   "IsAbstract": true,
@@ -260,6 +337,7 @@
       "NameGuid": "3136c138-2670-4dd4-abee-72cd03f8c52e",
       "Name": "Number",
       "Code": "Number",
+      "IsEnabled": false,
       "IsRequired": true,
       "IsUnique": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
@@ -279,6 +357,7 @@
       "Name": "CreatedDate",
       "Code": "CreatedDate",
       "DateTimeFormat": "DateTime",
+      "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "7cde3ebf-fd3f-4ee4-9cc4-362a9148d6f6"
@@ -325,6 +404,7 @@
           "Code": "Closed"
         }
       ],
+      "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
       "PreviousPropertyGuid": "99824fb0-9b96-4596-895b-8e3253adc281"
@@ -354,6 +434,28 @@
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "3136c138-2670-4dd4-abee-72cd03f8c52e"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "0e7098d2-d9c9-478f-ab23-037f24337f36",
+      "Name": "Jobs",
+      "Code": "RequestJobs",
+      "EntityGuid": "ad384da4-03a8-4ef2-9569-33aaa6cc669e",
+      "HandledEvents": [
+        "AddedShared",
+        "ChangedShared"
+      ],
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "db79f5f3-4d0e-4ff9-895a-a578b52cedeb"
+    },
+    {
+      "$type": "Sungero.Metadata.DoublePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "acb0d81c-f74b-443e-a93b-184c927ca18a",
+      "Name": "TotalHours",
+      "Code": "TotalHours",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "0e7098d2-d9c9-478f-ab23-037f24337f36"
     }
   ],
   "PublicStructures": [],

@@ -91,4 +91,19 @@
   <data name="Property_Bank" xml:space="preserve">
     <value>Bank</value>
   </data>
+  <data name="Action_TestAction" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Action_TestActionDescription" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Action_TestActionHint" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Action_TestActionConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_TestActionConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

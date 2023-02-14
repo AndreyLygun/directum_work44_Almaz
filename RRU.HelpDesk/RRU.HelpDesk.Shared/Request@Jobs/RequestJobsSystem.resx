@@ -58,73 +58,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Property_Name" xml:space="preserve">
-    <value>Subject</value>
+  <data name="Property_Date" xml:space="preserve">
+    <value>Дата</value>
   </data>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Request</value>
+  <data name="Property_Employee" xml:space="preserve">
+    <value>Сотрудник</value>
   </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Request</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Requests</value>
-  </data>
-  <data name="Property_Number" xml:space="preserve">
-    <value>Номер сообщения</value>
-  </data>
-  <data name="Property_Description" xml:space="preserve">
-    <value>Описание</value>
-  </data>
-  <data name="Property_CreatedDate" xml:space="preserve">
-    <value>Дата создания</value>
-  </data>
-  <data name="Property_ClosedDate" xml:space="preserve">
-    <value>Дата закрытия</value>
-  </data>
-  <data name="Property_RequestKind" xml:space="preserve">
-    <value>Тип запроса</value>
-  </data>
-  <data name="Property_LifeCycle" xml:space="preserve">
-    <value>Жизненный цикл</value>
-  </data>
-  <data name="Enum_LifeCycle_InWork" xml:space="preserve">
-    <value>In work</value>
-  </data>
-  <data name="Enum_LifeCycle_InControl" xml:space="preserve">
-    <value>In control</value>
-  </data>
-  <data name="Enum_LifeCycle_Closed" xml:space="preserve">
-    <value>Closed</value>
-  </data>
-  <data name="Property_Result" xml:space="preserve">
-    <value>Result</value>
-  </data>
-  <data name="Property_Communication" xml:space="preserve">
-    <value>Общение</value>
-  </data>
-  <data name="ControlGroup_a861c95c78fc427799d5864fccebcfaa" xml:space="preserve">
-    <value>Общая информация</value>
-  </data>
-  <data name="ControlGroup_2747d4ff23924ef6a6e5dc429964e43f" xml:space="preserve">
-    <value>Общение</value>
-  </data>
-  <data name="Property_Responsible" xml:space="preserve">
-    <value>Ответственный</value>
-  </data>
-  <data name="ControlGroup_1f0d8ff6971f44088dcb068d7365ad73" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Property_Jobs" xml:space="preserve">
-    <value>Работы</value>
-  </data>
-  <data name="Form_d1d0461fda49488ebd7ed3557ca0e40e" xml:space="preserve">
-    <value>Jobs</value>
-  </data>
-  <data name="ControlGroup_ef7e7be296df45a688da864185b0ceff" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Property_TotalHours" xml:space="preserve">
+  <data name="Property_Hours" xml:space="preserve">
     <value>Количество часов</value>
   </data>
 </root>
