@@ -10,6 +10,17 @@ namespace RRU.HelpDesk
   partial class RequestServerHandlers
   {
 
+    public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
+    {
+      if (_obj.LifeCycle.Equals(LifeCycle.Closed)) {
+        if (string.IsNullOrWhiteSpace(_obj.Result)) {
+          e.AddError(_obj.Info.Properties.Result , "Перед закрытием обращения заполните результат обработки");
+          return;
+        }
+        _obj.ClosedDate = Calendar.Today;
+      }      
+    }
+
     public override void Created(Sungero.Domain.CreatedEventArgs e)
     {
       _obj.Number = _obj.Id;

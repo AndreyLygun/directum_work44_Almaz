@@ -106,10 +106,10 @@
           "Name": "Info",
           "ColumnDefinitions": [
             {
-              "Percentage": 49.0
+              "Percentage": 50.09
             },
             {
-              "Percentage": 48.82
+              "Percentage": 49.91
             }
           ],
           "ColumnNumber": 0,
@@ -299,7 +299,8 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer"
+    "CreatedServer",
+    "BeforeSaveServer"
   ],
   "IconResourcesKeys": [],
   "IsAbstract": true,
