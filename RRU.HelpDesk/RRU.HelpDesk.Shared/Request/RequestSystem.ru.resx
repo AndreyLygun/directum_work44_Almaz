@@ -85,4 +85,10 @@
   <data name="Form_d1d0461fda49488ebd7ed3557ca0e40e" xml:space="preserve">
     <value>Работы</value>
   </data>
+  <data name="Action_Open" xml:space="preserve">
+    <value>Открыть обращение</value>
+  </data>
+  <data name="Ribbon_Requests_ed32767350ea4dd094521b275c53b5c2" xml:space="preserve">
+    <value>Обращения</value>
+  </data>
 </root>

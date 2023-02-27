@@ -18,6 +18,7 @@ namespace RRU.HelpDesk
           return;
         }
         _obj.ClosedDate = Calendar.Today;
+        _obj.State.IsEnabled = false;
       }      
     }
 

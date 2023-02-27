@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
@@ -9,6 +9,10 @@ namespace RRU.HelpDesk
 {
   partial class RequestClientHandlers
   {
+    public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
+    {
+      _obj.State.IsEnabled = !_obj.LifeCycle.Equals(LifeCycle.Closed);
+    }
 
   }
 }

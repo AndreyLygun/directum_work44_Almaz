@@ -127,4 +127,22 @@
   <data name="Property_TotalHours" xml:space="preserve">
     <value>Количество часов</value>
   </data>
+  <data name="Action_Open" xml:space="preserve">
+    <value>Open request</value>
+  </data>
+  <data name="Action_OpenDescription" xml:space="preserve">
+    <value>Действие доступно только для обращений, которые были ранее обработаны и закрыты.</value>
+  </data>
+  <data name="Action_OpenHint" xml:space="preserve">
+    <value>Открыть обращение, которое было обработано и закрыто</value>
+  </data>
+  <data name="Action_OpenConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_OpenConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_Requests_ed32767350ea4dd094521b275c53b5c2" xml:space="preserve">
+    <value>Requests</value>
+  </data>
 </root>
