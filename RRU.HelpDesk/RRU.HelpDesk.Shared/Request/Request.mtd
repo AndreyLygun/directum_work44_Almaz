@@ -5,7 +5,7 @@
   "Actions": [
     {
       "NameGuid": "95bf579b-3a38-4aa9-bb37-6ecd074a84b0",
-      "Name": "Open",
+      "Name": "ReOpen",
       "ActionArea": "Card",
       "GenerateHandler": true,
       "LargeIconName": "Action_Open_large_95bf579b3a384aa9bb376ecd074a84b0.png",
@@ -349,6 +349,9 @@
       "NameGuid": "3136c138-2670-4dd4-abee-72cd03f8c52e",
       "Name": "Number",
       "Code": "Number",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsEnabled": false,
       "IsRequired": true,
       "IsUnique": true,
@@ -368,7 +371,10 @@
       "NameGuid": "5619d6ae-568f-41fd-b2d3-b0cc149e9822",
       "Name": "CreatedDate",
       "Code": "CreatedDate",
-      "DateTimeFormat": "DateTime",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsEnabled": false,
       "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
@@ -390,6 +396,9 @@
       "Code": "RequestKind",
       "EntityGuid": "054f4dd0-4f49-46e1-adfa-11a079dccc6e",
       "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "b9376cb7-fa02-412a-9f49-3b3e0f130799"
@@ -471,7 +480,9 @@
     }
   ],
   "PublicStructures": [],
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "Name"
+  ],
   "RibbonCardMetadata": {
     "NameGuid": "238ec310-57c3-4181-9d6a-55f6edc28c67",
     "Name": "RibbonCard",

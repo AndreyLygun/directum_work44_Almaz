@@ -11,18 +11,46 @@
   "CompanyCode": "RRU",
   "Cover": {
     "NameGuid": "323915ea-b297-44d3-86b5-d9637ca3ea0f",
-    "Actions": [],
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "0f04632b-b287-4990-baa2-e0376f683a10",
+        "Name": "RequstKinds",
+        "EntityTypeId": "054f4dd0-4f49-46e1-adfa-11a079dccc6e",
+        "GroupId": "23ead509-05aa-426a-939e-70495e3e82eb"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "3b244d78-dbd4-4f7b-b605-74b477481935",
+        "Name": "Requests",
+        "EntityTypeId": "a2e3179e-e4ba-4e50-a717-087fb1083d7a",
+        "GroupId": "23ead509-05aa-426a-939e-70495e3e82eb",
+        "PreviousItemGuid": "0f04632b-b287-4990-baa2-e0376f683a10"
+      }
+    ],
     "Background": null,
     "Footer": {
       "NameGuid": "ba0d1395-3525-43d7-8f99-737e3bb62ff6",
       "BackgroundPosition": "Stretch"
     },
-    "Groups": [],
+    "Groups": [
+      {
+        "NameGuid": "23ead509-05aa-426a-939e-70495e3e82eb",
+        "Name": "Databooks",
+        "BackgroundPosition": "Stretch",
+        "TabId": "f487c2fe-cfe3-430f-b7e1-0136ff305714"
+      }
+    ],
     "Header": {
       "NameGuid": "b8a40d0e-0a31-4645-adc1-f3fcd1cdeb01",
       "BackgroundPosition": "Stretch"
     },
-    "Tabs": []
+    "Tabs": [
+      {
+        "NameGuid": "f487c2fe-cfe3-430f-b7e1-0136ff305714",
+        "Name": "Main"
+      }
+    ]
   },
   "Dependencies": [
     {
@@ -48,6 +76,9 @@
       "ItemId": "cec8770d-406b-4d33-b259-ee2a7d66c4e5",
       "PreviousItemId": "33934411-36c7-4124-a667-b94b6b0e1786"
     }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
   ],
   "IconResourcesKeys": [],
   "Importance": "Medium",

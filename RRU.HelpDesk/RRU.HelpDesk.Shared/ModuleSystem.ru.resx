@@ -64,4 +64,13 @@
   <data name="CoverTitle" xml:space="preserve">
     <value>Поддержка пользователей</value>
   </data>
+  <data name="CoverGroup_Databooks" xml:space="preserve">
+    <value>Справочники</value>
+  </data>
+  <data name="CoverAction_RequstKinds" xml:space="preserve">
+    <value>Типы обращений</value>
+  </data>
+  <data name="CoverAction_Requests" xml:space="preserve">
+    <value>Обращения</value>
+  </data>
 </root>

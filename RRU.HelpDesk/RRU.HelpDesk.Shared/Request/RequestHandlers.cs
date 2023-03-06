@@ -20,9 +20,24 @@ namespace RRU.HelpDesk
   partial class RequestSharedHandlers
   {
 
+    public virtual void CreatedDateChanged(Sungero.Domain.Shared.DateTimePropertyChangedEventArgs e)
+    {
+      Functions.Request.FillName(_obj);
+    }
+
+    public virtual void NumberChanged(Sungero.Domain.Shared.IntegerPropertyChangedEventArgs e)
+    {
+      Functions.Request.FillName(_obj);
+    }
+
+    public virtual void RequestKindChanged(RRU.HelpDesk.Shared.RequestRequestKindChangedEventArgs e)
+    {
+      Functions.Request.FillName(_obj);
+    }
+
     public virtual void JobsChanged(Sungero.Domain.Shared.CollectionPropertyChangedEventArgs e)
     {
-      _obj.TotalHours = _obj.Jobs.Sum(j => j.Hours);      
+      _obj.TotalHours = _obj.Jobs.Sum(j => j.Hours);
     }
 
   }

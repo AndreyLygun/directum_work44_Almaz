@@ -2,6 +2,25 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "33934411-36c7-4124-a667-b94b6b0e1786",
   "Name": "InternalRequest",
+  "Actions": [
+    {
+      "NameGuid": "9ea8012a-8ed3-4213-bb1e-a7ff87a58c08",
+      "Name": "ShowAuthorsRequest",
+      "ActionArea": "CardAndCollection",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    },
+    {
+      "NameGuid": "0cb94b23-74b1-48cb-b768-e037cf5130bd",
+      "Name": "ShowAuthorsRequestWrong",
+      "ActionArea": "CardAndCollection",
+      "GenerateHandler": true,
+      "LargeIconName": "",
+      "SmallIconName": "",
+      "Versions": []
+    }
+  ],
   "BaseGuid": "a2e3179e-e4ba-4e50-a717-087fb1083d7a",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {
@@ -83,7 +102,24 @@
     "NameGuid": "6ff04ad1-be31-44d5-a2fa-d5fdd133fda8",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "45679f45-a054-4a9c-95f0-804e41a185a6",
+        "Name": "ShowAuthorsRequest",
+        "ActionGuid": "9ea8012a-8ed3-4213-bb1e-a7ff87a58c08",
+        "Index": 0,
+        "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "3753d5cc-8330-4ffd-963b-304ff0c83cb5",
+        "Name": "ShowAuthorsRequestWrong",
+        "ActionGuid": "0cb94b23-74b1-48cb-b768-e037cf5130bd",
+        "Index": 1,
+        "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
+      }
+    ],
     "Groups": [],
     "IsAncestorMetadata": true,
     "Pages": [],
@@ -93,8 +129,27 @@
     "NameGuid": "22619757-6655-4cfa-ac41-f27143caeb6a",
     "Name": "RibbonCollection",
     "Categories": [],
-    "Elements": [],
-    "Groups": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "d50d8913-c1f4-4b9c-9d47-9d834a62dcbb",
+        "Name": "ShowAuthorsRequest",
+        "ActionGuid": "9ea8012a-8ed3-4213-bb1e-a7ff87a58c08",
+        "ButtonSize": "Large",
+        "Index": -1,
+        "ParentGuid": "2204c242-c60e-484c-a9aa-dbcbf9ec6f19"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "2204c242-c60e-484c-a9aa-dbcbf9ec6f19",
+        "Name": "Requests",
+        "IconName": null,
+        "Index": 21,
+        "ParentGuid": "3a9d7dc2-d662-4966-9fdc-c8004b9c83e2",
+        "SmallIconName": null
+      }
+    ],
     "IsAncestorMetadata": true,
     "Pages": []
   },
