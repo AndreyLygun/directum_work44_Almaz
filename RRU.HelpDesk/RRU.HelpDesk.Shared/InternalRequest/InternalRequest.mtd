@@ -10,15 +10,6 @@
       "GenerateHandler": true,
       "LargeIconName": null,
       "SmallIconName": null
-    },
-    {
-      "NameGuid": "0cb94b23-74b1-48cb-b768-e037cf5130bd",
-      "Name": "ShowAuthorsRequestWrong",
-      "ActionArea": "CardAndCollection",
-      "GenerateHandler": true,
-      "LargeIconName": "",
-      "SmallIconName": "",
-      "Versions": []
     }
   ],
   "BaseGuid": "a2e3179e-e4ba-4e50-a717-087fb1083d7a",
@@ -109,14 +100,6 @@
         "Name": "ShowAuthorsRequest",
         "ActionGuid": "9ea8012a-8ed3-4213-bb1e-a7ff87a58c08",
         "Index": 0,
-        "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
-      },
-      {
-        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
-        "NameGuid": "3753d5cc-8330-4ffd-963b-304ff0c83cb5",
-        "Name": "ShowAuthorsRequestWrong",
-        "ActionGuid": "0cb94b23-74b1-48cb-b768-e037cf5130bd",
-        "Index": 1,
         "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
       }
     ],

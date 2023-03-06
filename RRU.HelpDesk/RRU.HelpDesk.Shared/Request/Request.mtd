@@ -10,6 +10,22 @@
       "GenerateHandler": true,
       "LargeIconName": "Action_Open_large_95bf579b3a384aa9bb376ecd074a84b0.png",
       "SmallIconName": "Action_Open_small_95bf579b3a384aa9bb376ecd074a84b0.png"
+    },
+    {
+      "NameGuid": "1c9b01a0-78ed-4b42-9b7e-f97b5eb716ee",
+      "Name": "AddDocument",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_AddDocument_large_1c9b01a078ed4b429b7ef97b5eb716ee.png",
+      "SmallIconName": "Action_AddDocument_small_1c9b01a078ed4b429b7ef97b5eb716ee.png"
+    },
+    {
+      "NameGuid": "471434f1-9a0d-480a-a41b-3d12f52c1eca",
+      "Name": "ShowAddendums",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
     }
   ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
@@ -316,7 +332,6 @@
   "IconResourcesKeys": [],
   "IsAbstract": true,
   "IsStatusEnabled": true,
-  "IsVisible": false,
   "OperationsClass": "RequestOperations",
   "Overridden": [
     "IsStatusEnabled",
@@ -495,6 +510,24 @@
         "ActionGuid": "95bf579b-3a38-4aa9-bb37-6ecd074a84b0",
         "ButtonSize": "Large",
         "Index": -1,
+        "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "6ce98461-b81d-465a-a156-f964f415bac6",
+        "Name": "AddDocument",
+        "ActionGuid": "1c9b01a0-78ed-4b42-9b7e-f97b5eb716ee",
+        "ButtonSize": "Large",
+        "Index": 0,
+        "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "94012a77-963a-4f75-aeee-a7b03fe3b49d",
+        "Name": "ShowAddendums",
+        "ActionGuid": "471434f1-9a0d-480a-a41b-3d12f52c1eca",
+        "ButtonSize": "Large",
+        "Index": 1,
         "ParentGuid": "ed327673-50ea-4dd0-9452-1b275c53b5c2"
       }
     ],

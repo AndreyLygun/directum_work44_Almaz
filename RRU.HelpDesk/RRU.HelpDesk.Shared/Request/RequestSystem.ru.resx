@@ -91,4 +91,7 @@
   <data name="Ribbon_Requests_ed32767350ea4dd094521b275c53b5c2" xml:space="preserve">
     <value>Обращения</value>
   </data>
+  <data name="Action_ShowAddendums" xml:space="preserve">
+    <value>Отобразить приложения к запросу</value>
+  </data>
 </root>

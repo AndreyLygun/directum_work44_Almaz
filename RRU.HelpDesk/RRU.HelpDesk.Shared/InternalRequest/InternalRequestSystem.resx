@@ -88,19 +88,4 @@
   <data name="Ribbon_Requests_2204c242c60e484ca9aadbcbf9ec6f19" xml:space="preserve">
     <value>Запросы</value>
   </data>
-  <data name="Action_ShowAuthorsRequestWrong" xml:space="preserve">
-    <value>Все обращения автора (неправильная версия)</value>
-  </data>
-  <data name="Action_ShowAuthorsRequestWrongDescription" xml:space="preserve">
-    <value>Показать все обращения, автор которых такой же, как у этого обращения</value>
-  </data>
-  <data name="Action_ShowAuthorsRequestWrongHint" xml:space="preserve">
-    <value>Показать все обращения этого автора</value>
-  </data>
-  <data name="Action_ShowAuthorsRequestWrongConfirmationMessage" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Action_ShowAuthorsRequestWrongConfirmationDescription" xml:space="preserve">
-    <value />
-  </data>
 </root>

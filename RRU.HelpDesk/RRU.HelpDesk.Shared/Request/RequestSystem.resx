@@ -145,4 +145,34 @@
   <data name="Ribbon_Requests_ed32767350ea4dd094521b275c53b5c2" xml:space="preserve">
     <value>Requests</value>
   </data>
+  <data name="Action_AddDocument" xml:space="preserve">
+    <value>Добавить документ</value>
+  </data>
+  <data name="Action_AddDocumentDescription" xml:space="preserve">
+    <value>Добавить файл к обращению</value>
+  </data>
+  <data name="Action_AddDocumentHint" xml:space="preserve">
+    <value>Создать приложение</value>
+  </data>
+  <data name="Action_AddDocumentConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_AddDocumentConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowAddendums" xml:space="preserve">
+    <value>Show Addendums</value>
+  </data>
+  <data name="Action_ShowAddendumsDescription" xml:space="preserve">
+    <value>Show Addendums</value>
+  </data>
+  <data name="Action_ShowAddendumsHint" xml:space="preserve">
+    <value>Show Addendums</value>
+  </data>
+  <data name="Action_ShowAddendumsConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowAddendumsConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

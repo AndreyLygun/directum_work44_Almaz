@@ -58,37 +58,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DisplayName" xml:space="preserve">
-    <value>HelpDesk</value>
-  </data>
-  <data name="CoverTitle" xml:space="preserve">
-    <value>HelpDesk</value>
-  </data>
-  <data name="CoverTab_Main" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="CoverGroup_Settings" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="CoverAction_RequstKinds" xml:space="preserve">
-    <value>RequstKinds</value>
-  </data>
-  <data name="CoverDescription_RequstKinds" xml:space="preserve">
-    <value />
-  </data>
-  <data name="CoverAction_InternalRequests" xml:space="preserve">
-    <value>Internal Requests</value>
-  </data>
-  <data name="CoverGroup_Requests" xml:space="preserve">
-    <value>Requests</value>
-  </data>
-  <data name="CoverDescription_InternalRequests" xml:space="preserve">
-    <value>Обращения от сотрудников предприятия</value>
-  </data>
-  <data name="CoverAction_ExternalRequests" xml:space="preserve">
-    <value>External Requests</value>
-  </data>
-  <data name="CoverDescription_ExternalRequests" xml:space="preserve">
-    <value>Обращения от внешних заказчиков</value>
+  <data name="Name" xml:space="preserve">
+    <value>Addenum to Request # {0}</value>
   </data>
 </root>
