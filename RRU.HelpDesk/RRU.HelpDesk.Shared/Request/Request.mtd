@@ -332,6 +332,7 @@
   "IconResourcesKeys": [],
   "IsAbstract": true,
   "IsStatusEnabled": true,
+  "IsVisible": false,
   "OperationsClass": "RequestOperations",
   "Overridden": [
     "IsStatusEnabled",

@@ -17,7 +17,8 @@
         "NameGuid": "04a42d8c-ffee-493f-b8ad-fb63afaddcab",
         "Name": "InternalRequests",
         "EntityTypeId": "33934411-36c7-4124-a667-b94b6b0e1786",
-        "GroupId": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c"
+        "GroupId": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c",
+        "PreviousItemGuid": "0f6ebf42-cdb7-4649-a67c-6648b33bb5e6"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -27,12 +28,42 @@
         "GroupId": "23ead509-05aa-426a-939e-70495e3e82eb"
       },
       {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "0f6ebf42-cdb7-4649-a67c-6648b33bb5e6",
+        "Name": "FindByNumber",
+        "FunctionName": "FindRequestByNumber",
+        "GroupId": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c",
+        "PreviousItemGuid": "45125afa-809c-45da-9698-feeb00f745ae"
+      },
+      {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "3b141741-8385-44d7-82c6-a5a3874d5337",
         "Name": "ExternalRequests",
         "EntityTypeId": "cec8770d-406b-4d33-b259-ee2a7d66c4e5",
         "GroupId": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c",
         "PreviousItemGuid": "04a42d8c-ffee-493f-b8ad-fb63afaddcab"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "45125afa-809c-45da-9698-feeb00f745ae",
+        "Name": "FindByCompany",
+        "FunctionName": "FindRequestsByCompany",
+        "GroupId": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "6c2f779f-00f3-4333-8d01-a2c34e0e4a53",
+        "Name": "CreateExternalRequest",
+        "FunctionName": "CreateExternalRequest",
+        "GroupId": "b6c7c322-72ed-42ff-8061-80ddf77afc93"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "f4451c02-8822-4ecd-b730-b853a70a6fba",
+        "Name": "CreateInternalRequest",
+        "FunctionName": "CreateInternalRequest",
+        "GroupId": "b6c7c322-72ed-42ff-8061-80ddf77afc93",
+        "PreviousItemGuid": "6c2f779f-00f3-4333-8d01-a2c34e0e4a53"
       }
     ],
     "Background": null,
@@ -42,8 +73,8 @@
     },
     "Groups": [
       {
-        "NameGuid": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c",
-        "Name": "Requests",
+        "NameGuid": "b6c7c322-72ed-42ff-8061-80ddf77afc93",
+        "Name": "Create",
         "BackgroundPosition": "Stretch",
         "TabId": "f487c2fe-cfe3-430f-b7e1-0136ff305714"
       },
@@ -51,7 +82,14 @@
         "NameGuid": "23ead509-05aa-426a-939e-70495e3e82eb",
         "Name": "Settings",
         "BackgroundPosition": "Stretch",
-        "PreviousItemGuid": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c",
+        "PreviousItemGuid": "b6c7c322-72ed-42ff-8061-80ddf77afc93",
+        "TabId": "f487c2fe-cfe3-430f-b7e1-0136ff305714"
+      },
+      {
+        "NameGuid": "43b04f01-d7cf-4cef-b2af-3e4a1ff6d62c",
+        "Name": "Requests",
+        "BackgroundPosition": "Stretch",
+        "PreviousItemGuid": "23ead509-05aa-426a-939e-70495e3e82eb",
         "TabId": "f487c2fe-cfe3-430f-b7e1-0136ff305714"
       }
     ],
@@ -75,6 +113,11 @@
     },
     {
       "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.4.32.0"
+    },
+    {
+      "Id": "243b34ec-8425-4c7e-b66f-27f7b9c8f38d",
       "MaxVersion": "",
       "MinVersion": "4.4.32.0"
     }
@@ -107,6 +150,36 @@
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.HelpDesk",
+  "PublicFunctions": [
+    {
+      "Name": "CreateExternalRequest",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::RRU.HelpDesk.IExternalRequest",
+      "ReturnTypeFullName": "RRU.HelpDesk.IExternalRequest, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "CreateInternalRequest",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::RRU.HelpDesk.IInternalRequest",
+      "ReturnTypeFullName": "RRU.HelpDesk.IInternalRequest, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "FindRequestsByCompany",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "company",
+          "ParameterType": "global::Sungero.Parties.ICompanyBase",
+          "ParameterTypeFullName": "Sungero.Parties.ICompanyBase, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Linq.IQueryable<global::RRU.HelpDesk.IExternalRequest>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    }
+  ],
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "RRU.HelpDesk",

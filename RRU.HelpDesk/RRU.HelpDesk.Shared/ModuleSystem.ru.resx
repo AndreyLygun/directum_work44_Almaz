@@ -74,9 +74,24 @@
     <value>Обращения</value>
   </data>
   <data name="CoverAction_InternalRequests" xml:space="preserve">
-    <value>Внутренние обращения</value>
+    <value>Все внутренние обращения</value>
   </data>
   <data name="CoverAction_ExternalRequests" xml:space="preserve">
-    <value>Внешние обращения</value>
+    <value>Все внешние обращения</value>
+  </data>
+  <data name="CoverGroup_Create" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="CoverAction_CreateExternalRequest" xml:space="preserve">
+    <value>Внешнее обращение</value>
+  </data>
+  <data name="CoverAction_FindByNumber" xml:space="preserve">
+    <value>Найти обращение по номеру</value>
+  </data>
+  <data name="CoverAction_CreateInternalRequest" xml:space="preserve">
+    <value>Внутреннее обращение</value>
+  </data>
+  <data name="CoverAction_FindByCompany" xml:space="preserve">
+    <value>Найти обращение по компании</value>
   </data>
 </root>
