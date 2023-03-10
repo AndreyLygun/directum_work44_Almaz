@@ -15,8 +15,23 @@
   "FilterPanel": {
     "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
     "Name": "FilterPanel",
-    "Controls": [],
-    "IsAncestorMetadata": true
+    "Controls": [
+      {
+        "$type": "Sungero.Metadata.FilterListMetadata, Sungero.Metadata",
+        "NameGuid": "9de2ed40-643b-4759-b82f-0e80b69b3764",
+        "Name": "Type",
+        "IsAncestorMetadata": true,
+        "IsVisible": false,
+        "Overridden": [
+          "IsVisible"
+        ],
+        "ParentGuid": "012ce64b-1b25-4dc4-a384-bef35d8e8344"
+      }
+    ],
+    "IsAncestorMetadata": true,
+    "Overridden": [
+      "Controls"
+    ]
   },
   "Forms": [
     {
@@ -74,11 +89,13 @@
       "Overridden": []
     }
   ],
+  "IconName": "ExternalRequest.ico",
   "IconResourcesKeys": [],
   "OperationsClass": "",
   "Overridden": [
     "IsVisible",
-    "CanBeSearch"
+    "CanBeSearch",
+    "IconName"
   ],
   "Properties": [
     {

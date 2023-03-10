@@ -6,6 +6,8 @@ using Sungero.CoreEntities;
 
 namespace RRU.HelpDesk.Server
 {
+
+
   partial class HelpDeskHandlers
   {
   }

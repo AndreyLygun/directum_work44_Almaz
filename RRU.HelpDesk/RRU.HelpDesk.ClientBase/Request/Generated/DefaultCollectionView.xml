@@ -7,26 +7,26 @@
       <property name="$GridControl" iskey="true" value="GridControl">
         <property name="GroupSummary" iskey="true" value="0" />
         <property name="View" isnull="true" iskey="true">
-          <property name="AutoWidth">false</property>
-          <property name="AllowGrouping">true</property>
-          <property name="ShowGroupPanel">true</property>
+          <property name="ShowTotalSummary">true</property>
           <property name="ColumnChooserState" isnull="true" iskey="true">
             <property name="Location">697,-194</property>
             <property name="Size">220,250</property>
           </property>
+          <property name="AutoWidth">true</property>
+          <property name="AllowGrouping">true</property>
           <property name="AllowSorting">true</property>
-          <property name="IsRowCellMenuEnabled">true</property>
+          <property name="ShowGroupPanel">true</property>
           <property name="LinesPerRowMode">OneLineMode</property>
+          <property name="IsRowCellMenuEnabled">true</property>
         </property>
-        <property name="GroupCount">0</property>
         <property name="TotalSummary" iskey="true" value="0" />
-        <property name="Columns" iskey="true" value="13">
+        <property name="GroupCount">0</property>
+        <property name="Columns" iskey="true" value="14">
           <property name="Item1" isnull="true" iskey="true">
             <property name="MinWidth">32</property>
             <property name="FieldName">T</property>
             <property name="FixedWidth">true</property>
             <property name="Visible">true</property>
-            <property name="ExtendedVisibleIndex">0</property>
             <property name="VisibleIndex">0</property>
             <property name="Width">32</property>
             <property name="ActualWidth">4*</property>
@@ -68,7 +68,7 @@
             <property name="Name">Request_Description</property>
             <property name="ExtendedVisibleIndex">10</property>
             <property name="VisibleIndex">3</property>
-            <property name="ActualWidth">33*</property>
+            <property name="ActualWidth">23*</property>
           </property>
           <property name="Item7" isnull="true" iskey="true">
             <property name="FieldName">CreatedDate</property>
@@ -121,10 +121,16 @@
             <property name="VisibleIndex">4</property>
             <property name="ActualWidth">NaN</property>
           </property>
+          <property name="Item14" isnull="true" iskey="true">
+            <property name="FieldName">TotalHours</property>
+            <property name="Visible">false</property>
+            <property name="Name">Request_TotalHours</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
         </property>
         <property name="SortInfo" iskey="true" value="1">
           <property name="Item1" isnull="true" iskey="true">
-            <property name="FieldName">Name</property>
+            <property name="FieldName">Number</property>
             <property name="SortOrder">Ascending</property>
           </property>
         </property>

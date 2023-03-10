@@ -7,6 +7,29 @@ using RRU.HelpDesk.Request;
 
 namespace RRU.HelpDesk
 {
+  partial class RequestFilteringServerHandler<T>
+  {
+
+    public override IQueryable<T> Filtering(IQueryable<T> query, Sungero.Domain.FilteringEventArgs e)
+    {
+      if (_filter == null) return query;
+      if (_filter.FlagInWork || _filter.FlagInControl || _filter.FlagClosed) {
+        query = query.Where(r => (_filter.FlagInWork && r.LifeCycle.Equals(Request.LifeCycle.InWork)) ||
+                                 (_filter.FlagInControl && r.LifeCycle.Equals(Request.LifeCycle.InControl)) ||
+                                 (_filter.FlagClosed && r.LifeCycle.Equals(Request.LifeCycle.Closed)));
+      }
+      if (_filter.TypeExternal)
+        query = query.Where(r => ExternalRequests.Is(r));
+      if (_filter.TypeInternal)
+        query = query.Where(r => InternalRequests.Is(r));       
+      if (_filter.ResponsibleMe) 
+        query = query.Where(r => r.Responsible.Equals(Sungero.Company.Employees.Current));
+      if (_filter.ResponsibleSelected && _filter.ResponsibleEmployee != Sungero.Company.Employees.Null) 
+        query = query.Where(r => r.Responsible.Equals(_filter.ResponsibleEmployee));
+      return query;
+    }
+  }
+
   partial class RequestServerHandlers
   {
 
