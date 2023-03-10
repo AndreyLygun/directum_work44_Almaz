@@ -120,6 +120,11 @@
       "Id": "243b34ec-8425-4c7e-b66f-27f7b9c8f38d",
       "MaxVersion": "",
       "MinVersion": "4.4.32.0"
+    },
+    {
+      "Id": "92491aa6-c4df-4f46-a807-ebdd337bda74",
+      "MaxVersion": "",
+      "MinVersion": "1.1.0.0"
     }
   ],
   "ExplorerTreeOrder": [
@@ -141,10 +146,6 @@
     {
       "ItemId": "c2ce86e2-baba-47f9-ab0f-07f9d9f560b7",
       "PreviousItemId": "cec8770d-406b-4d33-b259-ee2a7d66c4e5"
-    },
-    {
-      "ItemId": "a3da03d5-840d-4a04-ba47-3ae99fbbfcfe",
-      "PreviousItemId": "c2ce86e2-baba-47f9-ab0f-07f9d9f560b7"
     }
   ],
   "HandledEvents": [
@@ -154,6 +155,15 @@
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.HelpDesk",
+  "Jobs": [
+    {
+      "NameGuid": "8199b883-30d1-4599-95c3-b137ddd2b628",
+      "Name": "SendRequestCountInfo",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    }
+  ],
   "PublicFunctions": [
     {
       "Name": "CreateExternalRequest",
@@ -187,7 +197,9 @@
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "RRU.HelpDesk",
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "RequestCountInfo"
+  ],
   "ServerAssemblyName": "RRU.HelpDesk.Server",
   "ServerNamespace": "RRU.HelpDesk.Server",
   "SharedAssemblyName": "RRU.HelpDesk.Shared",

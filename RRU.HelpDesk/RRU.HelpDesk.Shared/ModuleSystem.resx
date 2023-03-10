@@ -121,4 +121,13 @@
   <data name="CoverDescription_FindByCompany" xml:space="preserve">
     <value>Найти внешнее обращение по компании заказчика</value>
   </data>
+  <data name="JobDisplayName_8199b88330d1459995c3b137ddd2b628" xml:space="preserve">
+    <value>Уведомление о количестве обращений</value>
+  </data>
+  <data name="JobDescription_8199b88330d1459995c3b137ddd2b628" xml:space="preserve">
+    <value>Отправляет уведомление о количестве созданных обращений</value>
+  </data>
+  <data name="AsyncHandler_Description_119dcfb1e41e47cb81af26a4c77a5f8e" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
 </root>

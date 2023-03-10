@@ -94,4 +94,7 @@
   <data name="CoverAction_FindByCompany" xml:space="preserve">
     <value>Найти обращение по компании</value>
   </data>
+  <data name="AsyncHandler_Description_119dcfb1e41e47cb81af26a4c77a5f8e" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
 </root>
