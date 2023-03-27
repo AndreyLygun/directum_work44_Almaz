@@ -1,0 +1,65 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "19515cfe-cc2c-47a7-92d1-6ae7f5e835f9",
+  "Name": "Drawings",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.Drawings.Client",
+  "ClientBaseAssemblyName": "RRU.Drawings.ClientBase",
+  "ClientBaseNamespace": "RRU.Drawings.ClientBase",
+  "ClientNamespace": "RRU.Drawings.Client",
+  "Code": "Drawing",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "2bc63085-5dab-4aee-8d29-e918b79b19dc",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "bc6743f4-6fa3-4c04-9102-1ec77535690d",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "172d8051-f759-4c1c-8513-febaace83cc5",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "9fe0df35-b829-463a-add5-8888f141daee",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "70b6e09e-6252-4f40-a152-ddbbabf66330"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.Drawings",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.Drawings",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.Drawings.Server",
+  "ServerNamespace": "RRU.Drawings.Server",
+  "SharedAssemblyName": "RRU.Drawings.Shared",
+  "SharedNamespace": "RRU.Drawings.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
