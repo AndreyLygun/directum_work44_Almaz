@@ -1,0 +1,58 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "541782cb-8b51-41d6-a805-a94e7f81faae",
+  "Name": "Archive",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.Archive.Client",
+  "ClientBaseAssemblyName": "RRU.Archive.ClientBase",
+  "ClientBaseNamespace": "RRU.Archive.ClientBase",
+  "ClientNamespace": "RRU.Archive.Client",
+  "Code": "Archive",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "00dad76e-9696-4397-b533-5f984711683b",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "c3b08df5-b9be-4a59-9ab7-c5ab1314b5e0",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "ff08b99d-6fed-4e5d-bcd7-e2d93b489f5a",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.Archive",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.Archive",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.Archive.Server",
+  "ServerNamespace": "RRU.Archive.Server",
+  "SharedAssemblyName": "RRU.Archive.Shared",
+  "SharedNamespace": "RRU.Archive.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
