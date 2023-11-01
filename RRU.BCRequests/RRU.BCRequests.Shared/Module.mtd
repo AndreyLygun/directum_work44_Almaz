@@ -89,6 +89,10 @@
     {
       "ItemId": "a7ee1e3f-1e4c-4112-b36e-788846c7b5db",
       "PreviousItemId": "edf4726e-0491-4578-995a-52f34c456fb9"
+    },
+    {
+      "ItemId": "b6724f33-007a-4670-8d83-16335d662a3b",
+      "PreviousItemId": "a7ee1e3f-1e4c-4112-b36e-788846c7b5db"
     }
   ],
   "HandledEvents": [

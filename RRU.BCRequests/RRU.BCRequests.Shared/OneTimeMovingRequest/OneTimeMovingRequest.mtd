@@ -5,6 +5,22 @@
   "AccessRightsMode": "Both",
   "BaseGuid": "8e28ac9a-86c3-4863-bb20-fe7fc4ee9040",
   "CanBeNavigationPropertyType": true,
+  "ConverterFunctions": [
+    {
+      "Name": "CarsCollectionToString",
+      "DisplayNameResourceCode": "Cars",
+      "IsConverter": true,
+      "Parameters": [
+        {
+          "Name": "doc",
+          "ParameterType": "global::RRU.BCRequests.IOneTimeMovingRequest",
+          "ParameterTypeFullName": "RRU.BCRequests.IOneTimeMovingRequest, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
   "CreationAreaMetadata": {
     "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
     "Name": "CreationArea",
@@ -205,7 +221,7 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer"
+    "ShowingClient"
   ],
   "IconResourcesKeys": [],
   "IsVisible": false,

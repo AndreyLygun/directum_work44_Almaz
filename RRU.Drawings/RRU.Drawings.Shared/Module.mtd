@@ -11,18 +11,68 @@
   "CompanyCode": "RRU",
   "Cover": {
     "NameGuid": "2bc63085-5dab-4aee-8d29-e918b79b19dc",
-    "Actions": [],
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "4362769f-0c3b-4c3e-8fe2-eeda535879d5",
+        "Name": "DrawingSizes",
+        "EntityTypeId": "d0d55308-b66e-4c7a-b152-a99f9a75c5d8",
+        "GroupId": "b6edeb22-889f-4382-92a9-2f5274860a6c",
+        "PreviousItemGuid": "dfbbfe5d-8fa6-4f39-8cb8-a05e3ce16fdf"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "597e38ea-6a04-4b4a-a6e8-95fd3601e482",
+        "Name": "AllDrawing",
+        "EntityTypeId": "70b6e09e-6252-4f40-a152-ddbbabf66330",
+        "GroupId": "02bc30f3-b815-4713-a26b-6fc08a6de8f8"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "8f6e2669-6ef5-42eb-93d6-5649fc39c00a",
+        "Name": "PlacesList",
+        "EntityTypeId": "c4bad470-bd97-49ca-9929-a039831f437c",
+        "GroupId": "b6edeb22-889f-4382-92a9-2f5274860a6c",
+        "PreviousItemGuid": "4362769f-0c3b-4c3e-8fe2-eeda535879d5"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "dfbbfe5d-8fa6-4f39-8cb8-a05e3ce16fdf",
+        "Name": "DrawingParameters",
+        "EntityTypeId": "c07ddeaa-7468-461c-ac7e-6649d45eaddd",
+        "GroupId": "b6edeb22-889f-4382-92a9-2f5274860a6c"
+      }
+    ],
     "Background": null,
     "Footer": {
       "NameGuid": "bc6743f4-6fa3-4c04-9102-1ec77535690d",
       "BackgroundPosition": "Stretch"
     },
-    "Groups": [],
+    "Groups": [
+      {
+        "NameGuid": "02bc30f3-b815-4713-a26b-6fc08a6de8f8",
+        "Name": "Group",
+        "BackgroundPosition": "Stretch",
+        "TabId": "e3383e6c-4fed-4138-8e82-551f419c0e74"
+      },
+      {
+        "NameGuid": "b6edeb22-889f-4382-92a9-2f5274860a6c",
+        "Name": "Group1",
+        "BackgroundPosition": "Stretch",
+        "PreviousItemGuid": "02bc30f3-b815-4713-a26b-6fc08a6de8f8",
+        "TabId": "e3383e6c-4fed-4138-8e82-551f419c0e74"
+      }
+    ],
     "Header": {
       "NameGuid": "172d8051-f759-4c1c-8513-febaace83cc5",
       "BackgroundPosition": "Stretch"
     },
-    "Tabs": []
+    "Tabs": [
+      {
+        "NameGuid": "e3383e6c-4fed-4138-8e82-551f419c0e74",
+        "Name": "Tab"
+      }
+    ]
   },
   "Dependencies": [
     {
@@ -35,12 +85,30 @@
   "ExplorerTreeOrder": [
     {
       "ItemId": "70b6e09e-6252-4f40-a152-ddbbabf66330"
+    },
+    {
+      "ItemId": "c07ddeaa-7468-461c-ac7e-6649d45eaddd",
+      "PreviousItemId": "70b6e09e-6252-4f40-a152-ddbbabf66330"
+    },
+    {
+      "ItemId": "d0d55308-b66e-4c7a-b152-a99f9a75c5d8",
+      "PreviousItemId": "c07ddeaa-7468-461c-ac7e-6649d45eaddd"
+    },
+    {
+      "ItemId": "c4bad470-bd97-49ca-9929-a039831f437c",
+      "PreviousItemId": "d0d55308-b66e-4c7a-b152-a99f9a75c5d8"
     }
   ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
   "IconResourcesKeys": [],
-  "Importance": "Medium",
+  "Importance": "High",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.Drawings",
+  "Overridden": [
+    "Importance"
+  ],
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "RRU.Drawings",

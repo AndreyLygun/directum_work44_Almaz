@@ -1,0 +1,70 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "2eb7d2ad-2060-4c25-8ff6-920657ccae5b",
+  "Name": "DrawingDrawingParameters",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "DrawingDrawing",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a0c05baa-e39a-4006-936e-fdb54e20f74b",
+      "Name": "Drawing",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "70b6e09e-6252-4f40-a152-ddbbabf66330",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "7f0c4b1b-dc1e-4f4d-9e8f-0fece0333289",
+      "Name": "Name",
+      "CanBeSearch": false,
+      "Code": "Name",
+      "EntityGuid": "c07ddeaa-7468-461c-ac7e-6649d45eaddd",
+      "FlatListInStandaloneLookup": true,
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "a0c05baa-e39a-4006-936e-fdb54e20f74b"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "216e482b-7a60-4905-9a6b-25f6115b2222",
+      "Name": "Value",
+      "CanBeSearch": false,
+      "Code": "Value",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "7f0c4b1b-dc1e-4f4d-9e8f-0fece0333289"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "088a6ac6-ac82-4842-b9bb-8d7044c1c921",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "e9939094-6763-41b5-95a0-0f2e88c7d610",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 11
+    }
+  ]
+}

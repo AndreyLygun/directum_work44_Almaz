@@ -70,4 +70,196 @@
   <data name="Property_TotalPages" xml:space="preserve">
     <value>Количество листов</value>
   </data>
+  <data name="Property_DrawingParameters" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Чертёж</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Чертежу</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Чертежи</value>
+  </data>
+  <data name="Ribbon_Group_ec7bd50a72f444da9b5fefcfe6a334be" xml:space="preserve">
+    <value>Архив</value>
+  </data>
+  <data name="Ribbon_DrawingRequests_e037c0704ef94ef4b2d3a6e37114d99b" xml:space="preserve">
+    <value>Запросы</value>
+  </data>
+  <data name="Ribbon_DrawingRequestsDescription_e037c0704ef94ef4b2d3a6e37114d99b" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_DrawingRequestsHint_e037c0704ef94ef4b2d3a6e37114d99b" xml:space="preserve">
+    <value>Запросы в технический архив</value>
+  </data>
+  <data name="ControlGroup_01dd99f5db49480eb69928488f2653fb" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_406e14dc17444a7f85d8f6eef8abaa3f" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Resource_fc50c88831554ff196e8ff7064894ead" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fc50c88831554ff196e8ff7064894ead_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Form_67adb98a8a3148c395cb5b1674ef2474" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="ControlGroup_fd86ec670272447fbe4580324ca8a699" xml:space="preserve">
+    <value>Параметры изделия</value>
+  </data>
+  <data name="Action_DrawPaperRequestDescription" xml:space="preserve">
+    <value>Запросить бумажный экземпляр</value>
+  </data>
+  <data name="Action_DrawPaperRequest" xml:space="preserve">
+    <value>Бумажный экземпляр</value>
+  </data>
+  <data name="Resource_a915c070568d4f08a7365fbdabe9e559" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_a915c070568d4f08a7365fbdabe9e559_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_b8017e2288d643da8d6d8d11917b1dd6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_42612188cf984a66a4cc5c674787d208" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Resource_0e47ae684ffc4acb80bf3d6f715ce7c2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_0e47ae684ffc4acb80bf3d6f715ce7c2_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_28a6d4a8a26a467b8fe6da426092ec4a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_4e1d78fc6f6c4c81bf9aa1fa2031a46b" xml:space="preserve">
+    <value>Date and number</value>
+  </data>
+  <data name="Resource_91cff7df37834f868122f6238e9ba7c0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_91cff7df37834f868122f6238e9ba7c0_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_670056d3a80d41c290537ace73f8c3e3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ec742a73eb834925a43ca0a7cf42eae0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ec742a73eb834925a43ca0a7cf42eae0_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_7df27ccda54245dfb05240089a659cbf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_7df27ccda54245dfb05240089a659cbf_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_696a8bb83e1244c8927a37d955cfbf0f" xml:space="preserve">
+    <value>Retention</value>
+  </data>
+  <data name="Resource_dcb9c4394f4f42d287de6f225f4a2812" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_dcb9c4394f4f42d287de6f225f4a2812_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_20e94ab7b35542b7b03e10bba9c2e85c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_1b194ce3c44048879f0d1cdc4303c583" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="Resource_e300028a5e1f485d806917e121bb9ba9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_e81f0c5eb58a4007aeebb672ea52875b" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c45cfe6a44c043689482e4b0a91c3e05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_4ebb565bb94d465295fba553ba4900b8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_6db130988df540968fd5ffc5f9d4dfc5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_2574d8e0ddb04af7a692711434658d6a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_174ad90c64a4439eaa4f0c7286c511df" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_a52c6e121b2c4fc8941d7846542e3105" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_72e492251e834e65bb33ea838a458e43" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Resource_4628212b0304439ab3fb29f0a1ea289e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Place" xml:space="preserve">
+    <value>Место хранения</value>
+  </data>
+  <data name="ControlGroup_0e0a2087578640e6b52643c5678e7106" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_4a84cd6cf3f645d2b9e6564e6a7e85fd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_43089035f38646308e4600cc177225d6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_784d9e64873b412686f109518a56ff03" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DrawPaperRequestHint" xml:space="preserve">
+    <value>Запросить бумажный экземпляр</value>
+  </data>
+  <data name="Action_DrawPaperRequestConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DrawPaperRequestConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DrawCopyRequest" xml:space="preserve">
+    <value>Запрос на копию</value>
+  </data>
+  <data name="Action_DrawCopyRequestDescription" xml:space="preserve">
+    <value>Запрос на изготовлении бумажной копии</value>
+  </data>
+  <data name="Action_DrawCopyRequestHint" xml:space="preserve">
+    <value>Запрос на изготовлении бумажной копии</value>
+  </data>
+  <data name="Action_DrawCopyRequestConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DrawCopyRequestConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DrawRescanRequest" xml:space="preserve">
+    <value>Заспрос на пересканирование</value>
+  </data>
+  <data name="Action_DrawRescanRequestDescription" xml:space="preserve">
+    <value>Сделайте запрос на пересканирование чертежа, если качество скана неудовлетворительное</value>
+  </data>
+  <data name="Action_DrawRescanRequestHint" xml:space="preserve">
+    <value>Заспрос на пересканирование чертежа</value>
+  </data>
+  <data name="Action_DrawRescanRequestConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DrawRescanRequestConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>
