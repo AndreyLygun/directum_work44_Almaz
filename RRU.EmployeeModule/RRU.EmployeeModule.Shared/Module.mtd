@@ -1,0 +1,115 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "0a814385-50b5-4537-b428-52b099541082",
+  "Name": "EmployeeModule",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RRU.EmployeeModule.Client",
+  "ClientBaseAssemblyName": "RRU.EmployeeModule.ClientBase",
+  "ClientBaseNamespace": "RRU.EmployeeModule.ClientBase",
+  "ClientNamespace": "RRU.EmployeeModule.Client",
+  "Code": "Employe",
+  "CompanyCode": "RRU",
+  "Cover": {
+    "NameGuid": "921c6898-e627-4c8f-9295-8099eee0bb2f",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "6117d28e-2e87-44cf-af27-3fccf5aad99d",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "730a8a0f-192a-4417-ab8b-a0be9a24e844",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "fc1024e8-0851-4d86-b26b-7fa5829b6ea1",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.4.32.0"
+    },
+    {
+      "Id": "4e25caec-c722-4740-bcfd-c4f803840ac6",
+      "MaxVersion": "",
+      "MinVersion": "4.4.32.0"
+    },
+    {
+      "Id": "d534e107-a54d-48ec-85ff-bc44d731a82f",
+      "MaxVersion": "",
+      "MinVersion": "4.4.32.0"
+    },
+    {
+      "Id": "243b34ec-8425-4c7e-b66f-27f7b9c8f38d",
+      "MaxVersion": "",
+      "MinVersion": "4.4.32.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "IsVisible": false,
+      "ItemId": "e39e82a4-6765-4fac-9f9b-3920dce088f1"
+    },
+    {
+      "ItemId": "a80df7ff-3fab-4d0b-af08-740e7313f751",
+      "PreviousItemId": "e39e82a4-6765-4fac-9f9b-3920dce088f1"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RRU.EmployeeModule",
+  "Libraries": [
+    {
+      "NameGuid": "cd028899-87f9-4eaf-a604-3f96967aa2e2",
+      "Name": "NewtonsoftwareJSON",
+      "Scope": "Both"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "ImportEmployeeOrderV1",
+      "Parameters": [
+        {
+          "Name": "jsonFileName",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Get"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RRU.EmployeeModule",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RRU.EmployeeModule.Server",
+  "ServerNamespace": "RRU.EmployeeModule.Server",
+  "SharedAssemblyName": "RRU.EmployeeModule.Shared",
+  "SharedNamespace": "RRU.EmployeeModule.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.3",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
