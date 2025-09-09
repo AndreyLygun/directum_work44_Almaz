@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -93,6 +93,7 @@ namespace RRU.EmployeeModule.Server
         if (doc == null) {
           doc = EmployeeOrders.Create();
           doc.Department = Sungero.Company.Departments.Null;
+          Logger.Debug($"Создан новый приказ по кадрам № {docObject.DocNum} ");
         } else {
           doc.Employees.Clear(); // Если документ уже существовал, удаляем всех сотрудников, чтобы добавить их заново
           response.Status = 2;
@@ -104,7 +105,11 @@ namespace RRU.EmployeeModule.Server
         }
 
         if (!File.Exists(docObject.FileName))
-          throw new Exception($"Не найден файл с приказом {docObject.FileName}");
+        {
+          Logger.Debug($"При импорте приказа по кадрам {docObject.DocNum} не найден файл с приказом {docObject.FileName}");
+            throw new Exception($"Не найден файл с приказом {docObject.FileName}");
+        }
+        
         doc.CreateVersionFrom(docObject.FileName);
 
         doc.DocumentKind = kind;
@@ -122,6 +127,7 @@ namespace RRU.EmployeeModule.Server
             throw new Exception("Некоторые JSON-данные в списке сотрудников имеют неправильный формат");
           var employee = Sungero.Company.Employees.GetAll(e => e.PersonnelNumber.Equals(row.ID)).FirstOrDefault();
           if (employee == null) {
+            Logger.Debug($"Создан сотрудник с номером {row.ID}");
             // Создаём Person с указанными ФИО
             var person = Sungero.Parties.People.Create();
             string[] names = row.FIO.Split(' ');
@@ -156,7 +162,7 @@ namespace RRU.EmployeeModule.Server
         }
         doc.Save();
         doc.AccessRights.Grant(responsible, DefaultAccessRightsTypes.FullAccess);
-        doc.AccessRights.Save();        
+        doc.AccessRights.Save();
         
         // Импортирум приложения
         foreach(Attachment attachInfo in docObject.Attachments) {
