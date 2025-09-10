@@ -60,6 +60,8 @@
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.Almaz",
+  "IsolatedAssemblyName": "RRU.Almaz.Isolated",
+  "IsolatedNamespace": "RRU.Almaz.Isolated",
   "OrderedSpecialFolders": [],
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",

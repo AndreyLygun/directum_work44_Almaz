@@ -69,6 +69,8 @@
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.EmployeeModule",
+  "IsolatedAssemblyName": "RRU.EmployeeModule.Isolated",
+  "IsolatedNamespace": "RRU.EmployeeModule.Isolated",
   "Libraries": [
     {
       "NameGuid": "cd028899-87f9-4eaf-a604-3f96967aa2e2",
