@@ -76,6 +76,13 @@ namespace RRU.EmployeeModule.Server
         catch {
           throw new Exception($"Не удалось преобразовать JSON-данные в файле {jsonFileName}");
         }
+
+        if (!File.Exists(docObject.FileName))
+        {
+          Logger.Debug($"При импорте приказа по кадрам {docObject.DocNum} не найден файл с приказом {docObject.FileName}");
+            throw new Exception($"Не найден файл с приказом {docObject.FileName}");
+        }
+        
         // Получаем из полученной структуры объекты Directum (вид документа, ответственный пользователь и пр.)
         var kind = RRU.Almaz.DocumentKinds.GetAll(d => (d.DocumentType.Name.Equals("Приказы по персоналу")) && (d.GalaxyKindRRU==docObject.DocKind)).FirstOrDefault();
         //        var kind = RRU.Almaz.DocumentKinds.GetAll(d => (d.GalaxyKindRRU==docObject.DocKind)).FirstOrDefault();
@@ -101,15 +108,9 @@ namespace RRU.EmployeeModule.Server
           string URL = Sungero.Core.Hyperlinks.Get(doc);
           var regexResult = Regex.Matches(URL, @"https?:\/\/.*\/(.*)", RegexOptions.IgnoreCase);
           response.URL = regexResult[0].Groups[1].Value; // извлекаем из URI путь (убираем имя домена)
-          return Newtonsoft.Json.JsonConvert.SerializeObject(response);
+          // return Newtonsoft.Json.JsonConvert.SerializeObject(response);
         }
-
-        if (!File.Exists(docObject.FileName))
-        {
-          Logger.Debug($"При импорте приказа по кадрам {docObject.DocNum} не найден файл с приказом {docObject.FileName}");
-            throw new Exception($"Не найден файл с приказом {docObject.FileName}");
-        }
-        
+      
         doc.CreateVersionFrom(docObject.FileName);
 
         doc.DocumentKind = kind;
