@@ -72,12 +72,16 @@
   "InterfaceNamespace": "RRU.EmployeeModule",
   "IsolatedAssemblyName": "RRU.EmployeeModule.Isolated",
   "IsolatedNamespace": "RRU.EmployeeModule.Isolated",
+  "IsVisible": false,
   "Libraries": [
     {
       "NameGuid": "cd028899-87f9-4eaf-a604-3f96967aa2e2",
       "Name": "NewtonsoftwareJSON",
       "Scope": "Both"
     }
+  ],
+  "Overridden": [
+    "IsVisible"
   ],
   "PublicFunctions": [
     {
