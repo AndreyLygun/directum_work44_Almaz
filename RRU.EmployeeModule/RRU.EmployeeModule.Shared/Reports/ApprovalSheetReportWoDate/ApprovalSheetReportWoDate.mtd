@@ -2,7 +2,6 @@
   "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
   "NameGuid": "a80df7ff-3fab-4d0b-af08-740e7313f751",
   "Name": "ApprovalSheetReportWoDate",
-  "AccessRightsMode": "NoRight",
   "AssociatedGuid": "e39e82a4-6765-4fac-9f9b-3920dce088f1",
   "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
   "DataSources": [],
@@ -15,6 +14,7 @@
     "AfterExecuteServer"
   ],
   "IconResourcesKeys": [],
+  "NonVisualAuthorizationMode": "FullAccess",
   "Overridden": [
     "IsReadOnly",
     "Parameters",
@@ -25,7 +25,9 @@
     "PublicStructures",
     "ExportFormats",
     "DefaultExportFormat",
-    "HandledEvents"
+    "HandledEvents",
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
   ],
   "Parameters": [
     {
@@ -94,5 +96,10 @@
     "SignStatus",
     "SignStatusActive"
   ],
-  "Versions": []
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
 }
