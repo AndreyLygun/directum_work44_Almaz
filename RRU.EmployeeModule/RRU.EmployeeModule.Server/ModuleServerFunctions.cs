@@ -49,7 +49,7 @@ namespace RRU.EmployeeModule.Server
   }
 
   
-  public class ModuleFunctions
+  public partial class ModuleFunctions
   {
     
     /// <summary>

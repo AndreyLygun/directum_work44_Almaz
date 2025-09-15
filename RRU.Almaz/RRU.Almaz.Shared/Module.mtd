@@ -57,7 +57,6 @@
       "PreviousItemId": "6dada6b4-6054-4e11-b851-88551c1d8c0a"
     }
   ],
-  "IconResourcesKeys": [],
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "RRU.Almaz",
@@ -67,7 +66,6 @@
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "RRU.Almaz",
-  "ResourcesKeys": [],
   "ServerAssemblyName": "RRU.Almaz.Server",
   "ServerNamespace": "RRU.Almaz.Server",
   "SharedAssemblyName": "RRU.Almaz.Shared",
@@ -78,11 +76,11 @@
   "Versions": [
     {
       "Type": "SolutionMetadata",
-      "Number": 9
+      "Number": 11
     },
     {
       "Type": "ModuleMetadata",
-      "Number": 9
+      "Number": 11
     },
     {
       "Type": "DomainApi",

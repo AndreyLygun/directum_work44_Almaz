@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace RRU.EmployeeModule.Server
 {
-  public class ModuleAsyncHandlers
+  public partial class ModuleAsyncHandlers
   {
 
   }

@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace RRU.Almaz.Server
 {
-  public class ModuleAsyncHandlers
+  public partial class ModuleAsyncHandlers
   {
 
   }
